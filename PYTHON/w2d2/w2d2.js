@@ -43,6 +43,20 @@ function stringDedupe(str) {
     return answer
 }
 
+// spencer's answer
+
+// function stringDedupe(str) {
+//     let answer2 = '';
+//     const seen = {};
+//     for (let i = str.length-1; i > 0; i--) {
+//         if(!seen[str[i]]) {
+//             answer2 = str[i] + answer2
+//             seen[str[i]] = true
+//         }
+//     }
+//     return answer2
+// }
+
 console.log(stringDedupe(str1));
 console.log(stringDedupe(str2));
 console.log(stringDedupe(str3));
@@ -75,8 +89,23 @@ const expectedC = "cba fed ihg";
  * @returns {string} The given string with each word's letters reversed.
  */
 
+
+// jason's solution
+
 function reverseWords(str) {
-    
+    var word = ''
+    var result = ''
+    for (var i = 0; i < str.length; i++) {
+        if (str[i] == '') {
+            result += word + ' '
+            word = ''
+        }
+        else {
+            word = str[i] + word
+        }
+    }
+    result += word
+    return result
 }
 
 console.log(reverseWords(strA)) //expectedA: olleh
