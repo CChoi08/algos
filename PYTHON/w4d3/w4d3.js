@@ -26,13 +26,13 @@ const num6 = 8;
 const expected6 = 21;
 
 /**
-     * Recursively finds the nth number in the fibonacci sequence.
-     * - Time: O(?).
-     * - Space: O(?).
+* Recursively finds the nth number in the fibonacci sequence.
+* - Time: O(?).
+* - Space: O(?).
     * @param {number} num The position of the desired number in the fibonacci sequence.
     * @returns {number} The fibonacci number at the given position.
-     */
-    // Finish early? Try to implement memoization. Feel free to google! 
+*/
+// Finish early? Try to implement memoization. Feel free to google! 
 
 
 
