@@ -31,6 +31,9 @@ const expected3 = true;
  * @returns {boolean} Whether the searchNum was found in the sortedNums array.
  */
 // don't be afraid to add parameters!
+
+// our answer
+
 function binarySearch(sortedNums, num) {
 
     let mid = Math.floor(sortedNums.length/2)
@@ -65,6 +68,21 @@ function binarySearch(sortedNums, num) {
     return binarySearch(newARR, num)
 }
 
+// spencer's answer
+
+// function binarySearch(sortedNums, num, left = 0, right = sortedNums.length-1) {
+//     if (left > right) {
+//         return false
+//     }
+//     const mid = Math.floor((left+right) / 2)
+//     if (sortedNums[mid] === searchNum) {
+//         return true
+//     }
+//     if (sortedNums[mid] > searchNum) {
+//         return binarySearch(sortedNums, searchNum, left, mid-1)
+//     }
+//     return binarySearch(sortedNums, searchNum, mid+1, right)
+// }
 
 console.log(binarySearch(nums1, searchNum1)); // false
 console.log(binarySearch(nums2, searchNum2)); // true
